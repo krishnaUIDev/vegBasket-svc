@@ -1,0 +1,59 @@
+{
+  "name": "vegbasket-svc",
+  "version": "1.0.0-beta",
+  "description": "micro service for ui-webkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose --coverage",
+    "start": "nodemon index.js",
+    "commit": "git add . && git commit -m 'added'",
+    "deploy": "git push heroku master",
+    "clinic": "clinic doctor -- node index.js",
+    "autocannon": "autocannon -c 5 -a 1500 localhost:3001",
+    "loadtest": "loadtest -n 1000 -c 1000 --rps 500 http://localhost:3001/api/fibonacci?number=5"
+  },
+  "engines": {
+    "node": "12.18.3",
+    "npm": "6.14.6"
+  },
+  "author": "krishna",
+  "license": "ISC",
+  "dependencies": {
+    "address-validator": "^0.2.3",
+    "amqplib": "^0.7.1",
+    "autocannon": "^6.5.0",
+    "bcrypt": "^5.0.0",
+    "clinic": "^7.0.0",
+    "compression": "^1.7.4",
+    "concurrently": "^5.3.0",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^3.23.3",
+    "joi": "^17.1.1",
+    "joi-objectid": "^3.0.1",
+    "joi-password-complexity": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "loadtest": "^5.1.2",
+    "lodash": "^4.17.19",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.16",
+    "nodemon": "^2.0.4",
+    "pg": "^8.3.0",
+    "prom-client": "^12.0.0",
+    "pug": "^3.0.2",
+    "redis": "^3.1.2",
+    "underscore": "^1.10.2",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.0",
+    "jshint": "^2.11.1"
+  }
+}

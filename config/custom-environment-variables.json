@@ -1,0 +1,6 @@
+{
+  "name": "Vegbasket",
+  "jwtPrivateKey": "user_jwtPrivateKey",
+  "mongoConnection": "mongoConnection",
+  "PORT": "PORT"
+}

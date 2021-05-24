@@ -1,0 +1,6 @@
+{
+  "name": "Vegbasket",
+  "jwtPrivateKey": "user_jwtPrivateKey",
+  "PORT": "3001",
+  "mongoConnection": "mongodb+srv://disney:Krishna@disney.hi53h.mongodb.net/Vegbasket?retryWrites=true&w=majority"
+}

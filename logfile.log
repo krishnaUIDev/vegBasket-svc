@@ -1,0 +1,4 @@
+{"level":"error","message":"test test","stack":"Error: test\n    at G:\\contact-svc\\routes\\courses.js:9:9\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+{"message":"conneted to mogodb..","level":"info"}
+{"message":"conneted to mogodb..","level":"info"}
+{"message":"conneted to mogodb..","level":"info"}
