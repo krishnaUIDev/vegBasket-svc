@@ -15,6 +15,16 @@ let client = redis.createClient({
   port: keys.redisPort,
 });
 
+/**
+ *@swagger
+ * /:
+ *  get:
+ *    description: Use to request all customers
+ *    responses:
+ *       '200':
+ *          description: A successful response
+ */
+
 router.get("/", async (req, res) => {
   const courses = await Course.find().sort("name");
   client.set("courses", courses);
